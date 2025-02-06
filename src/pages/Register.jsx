@@ -78,71 +78,71 @@ function Register() {
 
   return (
     <div className="container">
-      <h2 className="text-2xl font-bold text-center mb-6">Register</h2>
+      <h2 className="text-2xl font-bold text-center mb-6 text-white">Register</h2>
       <form onSubmit={handleRegister}>
         <div className="mb-4">
-          <label htmlFor="first_name" className="block">First Name</label>
+          <label htmlFor="first_name" className="block text-white text-white">First Name</label>
           <input
             type="text"
             id="first_name"
             value={firstName}
             onChange={(e) => setFirstName(e.target.value)}
             required
-            className="w-full p-2"
+            className="w-full p-2 placeholder:text-blue-700 bg-transparent focus:bg-white transition-all duration-1000 border border-sky-700"
           />
         </div>
         <div className="mb-4">
-          <label htmlFor="last_name" className="block">Last Name</label>
+          <label htmlFor="last_name" className="block text-white">Last Name</label>
           <input
             type="text"
             id="last_name"
             value={lastName}
             onChange={(e) => setLastName(e.target.value)}
             required
-            className="w-full p-2"
+            className="w-full p-2 placeholder:text-blue-700 bg-transparent focus:bg-white transition-all duration-1000 border border-sky-700"
           />
         </div>
         <div className="mb-4">
-          <label htmlFor="email" className="block">Email</label>
+          <label htmlFor="email" className="block text-white">Email</label>
           <input
             type="email"
             id="email"
             value={email}
             onChange={(e) => setEmail(e.target.value)}
             required
-            className="w-full p-2"
+            className="w-full p-2 placeholder:text-blue-700 bg-transparent focus:bg-white transition-all duration-1000 border border-sky-700"
           />
         </div>
         <div className="mb-4">
-          <label htmlFor="password" className="block">Password</label>
+          <label htmlFor="password" className="block text-white">Password</label>
           <input
             type="password"
             id="password"
             value={password}
             onChange={(e) => setPassword(e.target.value)}
             required
-            className="w-full p-2"
+            className="w-full p-2 placeholder:text-blue-700 bg-transparent focus:bg-white transition-all duration-1000 border border-sky-700"
           />
         </div>
         <div className="mb-4">
-          <label htmlFor="confirm-password" className="block">Confirm Password</label>
+          <label htmlFor="confirm-password" className="block text-white">Confirm Password</label>
           <input
             type="password"
             id="confirm-password"
             value={confirmPassword}
             onChange={(e) => setConfirmPassword(e.target.value)}
             required
-            className="w-full p-2"
+            className="w-full p-2 placeholder:text-blue-700 bg-transparent focus:bg-white transition-all duration-1000 border border-sky-700"
           />
         </div>
         <div className="mb-4">
-          <label htmlFor="image" className="block">Profile Image</label>
+          <label htmlFor="image" className="block text-white">Profile Image</label>
           <input
             type="file"
             id="image"
             accept="image/*"
             onChange={handleImageChange}
-            className="w-full"
+            className="w-full p-2 placeholder:text-blue-700 bg-transparent focus:bg-white transition-all duration-1000 border border-sky-700"
           />
         </div>
         {error && <p className="text-red-500">{error}</p>}

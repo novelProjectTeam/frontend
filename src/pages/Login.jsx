@@ -40,10 +40,10 @@ function Login() {
   
 
   return (
-    <div className="container">
+    <div className="container text-white">
     <span className="borderLine"></span>
     <form onSubmit={handleLogin}>
-      <h2>تسجيل الدخول</h2>
+      <h2 className="form-title text-white ">تسجيل الدخول</h2>
       <div className="form-group mb-4">
         <input
           type="email"

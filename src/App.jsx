@@ -5,6 +5,7 @@ import { useLanguage } from "./context/LanguageContext";
 import Login from "./pages/Login";
 import Register from "./pages/Register";
 import Profile from "./pages/Profile";
+import Home from "./pages/Home";
 
 
 
@@ -26,6 +27,7 @@ function App() {
           <Route path="/Login" element={<Login />} />
           <Route path="/Register" element={<Register />} />
           <Route path="/Profile" element={<Profile />} />
+          <Route path="/" element={<Home />} />
 
           {/* Add more routes as needed */}
         </Routes>
