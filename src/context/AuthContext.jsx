@@ -14,6 +14,8 @@ export const AuthProvider = ({ children }) => {
     localStorage.setItem("auth_token", token);
     setIsAuthenticated(true);
 
+
+    if(isAuthenticated) {
     // جلب بيانات المستخدم
     try {
       const response = await axios.get("http://localhost:8000/api/user", {
@@ -31,7 +33,7 @@ export const AuthProvider = ({ children }) => {
     } catch (error) {
       console.error("Failed to fetch user data:", error);
     }
-  };
+  }};
 
   const logout = () => {
     setIsAuthenticated(false);
